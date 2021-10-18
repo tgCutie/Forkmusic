@@ -268,7 +268,7 @@ async def play(_, message: Message):
                 ]
             
         
-        if (dur / 300) > {DURATION_LIMIT}:
+        if (dur / 300) > DURATION_LIMIT:
              await lel.edit(f"⚡️ Unable to play video more than {DURATION_LIMIT} 😞")
              return
         requested_by = message.from_user.first_name
